@@ -1,0 +1,39 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.app{
+  background-color: #ff4814;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ghost{
+  animation: float 3s ease-out infinite ;
+}
+.ghost-shadow{
+  animation: shrink 3s ease-out infinite;
+}
+
+@keyframes float {
+  50%{
+    transform: translateY(20px);
+  }
+}
+
+@keyframes shrink {
+  0%{
+    transform: scaleX(0.9);
+  }
+  50%{
+    transform: scaleX(1.2);
+  }
+  100%{
+    transform: scaleX(0.9);
+  }
+}

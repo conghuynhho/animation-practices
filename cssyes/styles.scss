@@ -1,0 +1,60 @@
+$pink: #fe3a7d;
+$orange: #ff7b0a;
+
+// @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans";
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to bottom, $pink, $orange);
+  input {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: #222;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    opacity: 0;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+  }
+  input:checked ~ div {
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+  }
+
+  input:checked ~ div::before {
+    transform: scale(1);
+  }
+  .text {
+    position: relative;
+    min-width: 250px;
+    width: 100vw;
+    height: 100vh;
+    // overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    &::before {
+      content: "";
+      background: #222;
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      transform: scale(4);
+      border-radius: 100%;
+      transition: 0.2s ease-in-out;
+    }
+  }
+}

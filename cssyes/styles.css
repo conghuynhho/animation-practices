@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Josefin Sans";
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fe3a7d), to(#ff7b0a));
+  background: linear-gradient(to bottom, #fe3a7d, #ff7b0a);
+}
+
+.app input {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: #222;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  opacity: 0;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+
+.app input:checked ~ div {
+  -webkit-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+}
+
+.app input:checked ~ div::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.app .text {
+  position: relative;
+  min-width: 250px;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.app .text::before {
+  content: "";
+  background: #222;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  -webkit-transform: scale(4);
+          transform: scale(4);
+  border-radius: 100%;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+/*# sourceMappingURL=styles.css.map */

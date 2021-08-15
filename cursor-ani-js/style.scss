@@ -3,7 +3,7 @@ $tshirt-dec: #6192a1;
 $tshirt: #fb6971;
 $skin: #ffcfcc;
 $mouth: #ff4e57;
-$glass: #111;
+$glass: rgba(130, 130, 127, 0.87);
 // $tshirt
 
 * {
@@ -190,6 +190,7 @@ body {
         height: 42px;
         border-radius: 50%;
         border: 3px solid $glass;
+        // box-shadow: 0 0 0 1px rgba($color: #fff, $alpha: 0.9);
 
         &:first-child:before{
           content: '';

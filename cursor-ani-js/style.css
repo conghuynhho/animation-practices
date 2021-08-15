@@ -226,7 +226,7 @@ body {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  border: 3px solid #111;
+  border: 3px solid rgba(130, 130, 127, 0.87);
 }
 
 .head .face .glasses .glass:first-child:before {
@@ -234,7 +234,7 @@ body {
   position: absolute;
   width: 25px;
   height: 3px;
-  background-color: #111;
+  background-color: rgba(130, 130, 127, 0.87);
   left: -19px;
   top: 15%;
   -webkit-transform: rotate(50deg);
@@ -246,7 +246,7 @@ body {
   position: absolute;
   width: 25px;
   height: 3px;
-  background-color: #111;
+  background-color: rgba(130, 130, 127, 0.87);
   right: -19px;
   top: 15%;
   -webkit-transform: rotate(-50deg);
@@ -258,7 +258,7 @@ body {
   position: absolute;
   width: 10px;
   height: 3px;
-  background-color: #111;
+  background-color: rgba(130, 130, 127, 0.87);
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);

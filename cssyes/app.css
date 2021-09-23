@@ -10,7 +10,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  /* background: #222; */
+  background: #222;
   font-family: "Josefin Sans";
   background: linear-gradient(45deg, #fe3a7d, #ff7b0a);
   overflow: hidden;
